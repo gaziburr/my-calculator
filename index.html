@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            color: red;
+            padding: 10px;
+            margin: 10px;
+        }
+        body{
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <form action="" class="calcy" name="calcform">
+        <input type="text" name="result" /><br>
+        <input type="button" value="1" onclick="calcform.result.value+=1" />
+        <input type="button" value="2" onclick="calcform.result.value+=2" />
+        <input type="button" value="3" onclick="calcform.result.value+=3" /><br>
+        <input type="button" value="4" onclick="calcform.result.value+=4" />
+        <input type="button" value="5" onclick="calcform.result.value+=5" />
+        <input type="button" value="6" onclick="calcform.result.value+=6" /><br>
+        <input type="button" value="7" onclick="calcform.result.value+=7" />
+        <input type="button" value="8" onclick="calcform.result.value+=8" />
+        <input type="button" value="9" onclick="calcform.result.value+=9" /><br>
+        <input type="button" value="0" onclick="calcform.result.value+=0" />
+        <input type="button" value="." onclick="calcform.result.value+='.'">
+        <input type="button" value="+" onclick="calcform.result.value+='-'" /><br>
+        <input type="button" value="--" onclick="calcform.result.value+='+'" />
+        <input type="button" value="x" onclick="calcform.result.value+='*'" />
+        <input type="button" value="/" onclick="calcform.result.value+='/'" /><br>
+        <input type="button" value="=" onclick="calcform.result.value=eval(calcform.result.value)" />
+        <input type="button" value="clear all" onclick="calcform.result.value=''">
+      
+    </div>
+  </body>
+</html>
